@@ -1,24 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+> **Note:** This tool was developed rapidly to assist users with unwrapping their Boyco vaults and should not be considered a reflection of production quality or design capabilities.
+
+# Infrared Vault Unwrapper
+
+A simple, open-source tool for the Berachain community to unwrap their positions from Boyco yield opportunities.
+
+## Purpose
+
+This tool was created to help users who deposited into wrapped Infrared vaults (WIV) through Boyco yield opportunities. When withdrawals were unlocked, users found themselves needing to make direct contract calls to unwrap their positions, which was not user-friendly for many.
+
+This tool provides a simple web interface that allows users to:
+1. Connect their wallet
+2. Select their WIV position
+3. Unwrap their tokens with a single click
+
+## Features
+
+- Simple, user-friendly interface
+- Support for multiple WIV contracts
+- Automatic network switching to Berachain
+- Direct contract interaction without manual calls
+- Transaction confirmation and explorer links
 
 ## Getting Started
 
-First, run the development server:
+### Using the Live Version
 
+The easiest way to use this tool is to visit the live deployment:
+[https://infrared-unwrap.vercel.app](https://infrared-unwrap.vercel.app)
+
+### Running Locally
+
+If you prefer to run the tool locally:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/infrared-unwrap.git
+cd infrared-unwrap
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to use the tool.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technical Details
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This is a [Next.js](https://nextjs.org) project that uses:
+- Wagmi for blockchain interactions
+- Tailwind CSS for styling
+- TypeScript for type safety
+
+## Contributing
+
+This is an open-source project. Feel free to:
+- Report issues
+- Suggest improvements
+- Submit pull requests
+
+## License
+
+Open source - feel free to use and modify as needed.
 
 ## Learn More
 
